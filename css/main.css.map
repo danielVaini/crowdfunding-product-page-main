@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,CAAC,CAAC,EACA,MAAM,EAAE,CAAC,EACT,OAAO,EAAE,CAAC,EAEV,UAAU,EAAE,UAAU,GACvB;;AAED,AAAA,IAAI,EAAE,IAAI,CAAC,EACT,KAAK,EAAE,IAAI,EACX,MAAM,EAAE,IAAI,EAEZ,SAAS,EAAE,iBAAiB,GAE7B",
+    "sources": [
+        "main.scss",
+        "_imports.scss",
+        "Global/_global.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
