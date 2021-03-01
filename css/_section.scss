@@ -1,6 +1,6 @@
 .section-container {
   width: 700px;
-  height: auto;
+  height: 200px;
 
   display: flex;
   align-items: center;
@@ -17,10 +17,13 @@
   .title {
     width: 100%;
 
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    
 
     .btn-title {
       width: 100%;
@@ -28,6 +31,24 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
+
+      margin-top: 40px;
+
+      & button {
+        width: 150px;
+        height: 40px;
+
+        border: none;
+        border-radius: 25px;
+
+        outline: none;
+      }
+
+      .bookmark {
+        img {
+          position: absolute;
+        }
+      }
     }
   }
 }
