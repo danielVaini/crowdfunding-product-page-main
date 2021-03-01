@@ -9,7 +9,8 @@
         "_layout.scss",
         "_container.scss",
         "_menu-background.scss",
-        "_section.scss"
+        "_section.scss",
+        "_colors.scss"
     ],
     "names": [],
     "file": "main.css"
