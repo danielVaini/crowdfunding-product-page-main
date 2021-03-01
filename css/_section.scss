@@ -47,6 +47,14 @@
       .bookmark {
         img {
           position: absolute;
+          height: 48px;
+          
+        }
+
+        button {
+          text-align: end;
+
+          padding-right: 24px;
         }
       }
     }

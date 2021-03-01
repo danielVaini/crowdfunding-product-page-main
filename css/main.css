@@ -44,5 +44,7 @@ body, html { width: 100%; height: 100%; font-size: 16px; }
 
 .section-container .title .btn-title button { width: 150px; height: 40px; border: none; border-radius: 25px; outline: none; }
 
-.section-container .title .btn-title .bookmark img { position: absolute; }
+.section-container .title .btn-title .bookmark img { position: absolute; height: 48px; }
+
+.section-container .title .btn-title .bookmark button { text-align: end; padding-right: 24px; }
 /*# sourceMappingURL=main.css.map */
