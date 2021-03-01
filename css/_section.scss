@@ -25,7 +25,16 @@
     align-items: center;
     justify-content: center;
 
+
+    h1 {
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
     
+    p {
+      color: $darkGrayNeutral;
+      font-weight: 400;
+    }
 
     .btn-title {
       width: 100%;
