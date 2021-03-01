@@ -1,3 +1,5 @@
+@import './colors';
+
 .section-container {
   width: 700px;
   height: 200px;
@@ -35,8 +37,8 @@
       margin-top: 40px;
 
       & button {
-        width: 150px;
-        height: 40px;
+        width: 160px;
+        height: 48px;
 
         border: none;
         border-radius: 25px;
@@ -44,6 +46,8 @@
         outline: none;
 
         color: white;
+        background-color: $cyanPrimary;
+        font-weight: 700;
       }
 
       .bookmark {
@@ -54,8 +58,9 @@
         }
 
         button {
+          background-color: $darkGrayNeutralButton;
+          color: $darkGrayNeutral;
           text-align: end;
-
           padding-right: 24px;
         }
       }
