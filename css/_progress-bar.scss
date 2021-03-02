@@ -1,0 +1,101 @@
+@import './colors';
+.progress-bar {
+  width: 100%;
+  height: 300px;
+
+  background-color: white;
+
+  margin-top: 40px;
+
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  .backed-container {
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .backed {
+      width: 25%;
+
+      display: flex;
+      flex-direction: column;
+
+      margin-left: 24px;
+
+      p {
+        font-size: 32px;
+        font-weight: 700;
+      }
+      
+      span {
+        color: $darkGrayNeutral;
+        font-weight: 400;
+      }
+      
+    }
+    
+    .total-backers {
+      width: 25%;
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      border-left: 1px solid $darkGrayNeutral;
+      border-right: 1px solid $darkGrayNeutral;
+      
+      p {
+        font-size: 32px;
+        font-weight: 700;
+      }
+      
+      span {
+        color: $darkGrayNeutral;
+        font-weight: 400;
+      }
+    }
+    
+    .days-left {
+      width: 25%;
+      
+      display: flex;
+      flex-direction: column;
+      
+      p {
+        font-size: 32px;
+        font-weight: 700;
+      }
+      
+      span {
+        color: $darkGrayNeutral;
+        font-weight: 400;
+      }
+    }
+    
+  }
+  
+  .bar {
+    
+    width: 80%;
+
+    background-color: $darkGrayNeutralBg;
+    border-radius: 13px;
+    
+
+    div {
+      background-color: $cyanPrimary;
+      width: 80%;
+
+      height: 8px;
+      border-radius: 10px;
+    }
+  }
+  
+}

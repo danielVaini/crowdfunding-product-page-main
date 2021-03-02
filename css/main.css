@@ -1,6 +1,6 @@
 * { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-body, html { width: 100%; height: 100%; font-family: Commissioner; font-size: 16px; }
+body, html { width: 100%; height: 100%; font-family: Commissioner; font-size: 16px; background-color: #ebebeb; }
 
 .menu-container { width: 100%; height: 75px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-top: 40px; }
 
@@ -36,9 +36,9 @@ body, html { width: 100%; height: 100%; font-family: Commissioner; font-size: 16
 
 .background-menu-mobile { position: absolute; width: 100%; height: 100%; background: rgba(51, 51, 51, 0.274); left: -102.5%; -webkit-transition: all .5s; transition: all .5s; z-index: -1; }
 
-.section-container { width: 700px; height: 300px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding: 10px; margin-top: 15%; background-color: white; border-radius: 15px; }
+.section-container { width: 700px; height: auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; padding: 10px; margin-top: 15%; }
 
-.section-container .title { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.section-container .title { width: 100%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border-radius: 15px; background-color: white; }
 
 .section-container .title h1 { margin-bottom: 16px; font-weight: 700; }
 
@@ -51,4 +51,30 @@ body, html { width: 100%; height: 100%; font-family: Commissioner; font-size: 16
 .section-container .title .btn-title .bookmark img { position: absolute; height: 48px; }
 
 .section-container .title .btn-title .bookmark button { background-color: #e3e3e3; color: #7a7a7a; text-align: end; padding-right: 24px; }
+
+.progress-bar { width: 100%; height: 300px; background-color: white; margin-top: 40px; border-radius: 15px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.progress-bar .backed-container { width: 100%; height: 150px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; }
+
+.progress-bar .backed-container .backed { width: 25%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin-left: 24px; }
+
+.progress-bar .backed-container .backed p { font-size: 32px; font-weight: 700; }
+
+.progress-bar .backed-container .backed span { color: #7a7a7a; font-weight: 400; }
+
+.progress-bar .backed-container .total-backers { width: 25%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; border-left: 1px solid #7a7a7a; border-right: 1px solid #7a7a7a; }
+
+.progress-bar .backed-container .total-backers p { font-size: 32px; font-weight: 700; }
+
+.progress-bar .backed-container .total-backers span { color: #7a7a7a; font-weight: 400; }
+
+.progress-bar .backed-container .days-left { width: 25%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+
+.progress-bar .backed-container .days-left p { font-size: 32px; font-weight: 700; }
+
+.progress-bar .backed-container .days-left span { color: #7a7a7a; font-weight: 400; }
+
+.progress-bar .bar { width: 80%; background-color: #ebebeb; border-radius: 13px; }
+
+.progress-bar .bar div { background-color: #3cb4ac; width: 80%; height: 8px; border-radius: 10px; }
 /*# sourceMappingURL=main.css.map */
