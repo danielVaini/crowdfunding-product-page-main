@@ -58,21 +58,40 @@
         color: white;
         background-color: $cyanPrimary;
         font-weight: 700;
+
+        &:hover {
+          background-color: $darkCyanPrimary;
+          cursor: pointer;
+        }
       }
 
       .bookmark {
-        img {
-          position: absolute;
-          height: 48px;
-          
-        }
-
+        
         button {
+          display: flex;
+          align-items:center ;
+          svg {           
+          
+          }
           background-color: $darkGrayNeutralButton;
           color: $darkGrayNeutral;
           text-align: end;
           padding-right: 24px;
+
+          &:hover {
+            
+            circle {
+              fill: $cyanPrimary;  
+  
+            }
+  
+            path {
+              fill: white;
+            }
+          }
         }
+
+       
       }
     }
   }
