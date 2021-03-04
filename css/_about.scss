@@ -18,6 +18,8 @@
 
   margin-bottom: 20px;
 
+
+
   .margin {
     margin-top: 40px;
   }
@@ -109,6 +111,11 @@
 
           color: white;
           font-weight: 700;
+
+        &:hover {
+          background-color: $darkCyanPrimary;
+          cursor: pointer;
+          }
         }
 
         
@@ -133,6 +140,11 @@
 
         button {
           background-color: $darkGrayNeutral;
+
+          &:hover {
+            cursor: auto;
+            background-color: $darkGrayNeutral;
+          }
         }
       }
     }
