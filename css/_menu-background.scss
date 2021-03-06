@@ -8,8 +8,17 @@
 
   
 
-  left: -102.5%;
-  top: 100px;
+  left: -100.5%;
+  
   transition: all .5s;
+
+  display: flex;
+  
+  img {
+    height: 32px;
+    position: absolute;
+    left: 80%;
+    top: 40px;
+  }
   
 }
