@@ -70,15 +70,17 @@
         button {
           display: flex;
           align-items:center ;
-          svg {           
-          
-          }
+         
           background-color: $darkGrayNeutralButton;
           color: $darkGrayNeutral;
-          text-align: end;
+          
+          justify-content: space-between;
           padding-right: 24px;
+          
 
           &:hover {
+
+            color: $cyanPrimary;
             
             circle {
               fill: $cyanPrimary;  
