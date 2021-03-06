@@ -110,7 +110,9 @@
           background-color: $cyanPrimary;
 
           color: white;
-          font-weight: 700;
+          font-weight: 700; 
+
+          outline: none;
 
         &:hover {
           background-color: $darkCyanPrimary;
