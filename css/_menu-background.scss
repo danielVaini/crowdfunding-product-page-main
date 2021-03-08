@@ -13,12 +13,25 @@
   transition: all .5s;
 
   display: flex;
-  
-  img {
-    height: 32px;
-    position: absolute;
-    left: 80%;
-    top: 40px;
+  .close-menu{
+      height: 60px;
+      width: 60px;
+      position: absolute;
+      left: 80%;
+      top: 40px;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      img {
+        height: 30px;
+        width: 30px;
+        &:hover {
+         
+          cursor: pointer;
+        
+        }
+      }
+    
   }
   
 }
