@@ -1,18 +1,20 @@
 const input = document.getElementById('bt-menu')
 const menu = document.querySelector('.menu')
 const menuBackground = document.querySelector('.background-menu-mobile');
+const button = document.querySelector('.close-menu')
 
 input.addEventListener('click', function(){
   if(input.checked){
     menu.style.left = '12.5%';
     menuBackground.style.left = '0px';
-  
     
-  }else {
-    
-    menu.style.left = '-102.5%'
-    menuBackground.style.left = '-102.5%';
     
   }
+})
+
+button.addEventListener('click', () => {
+  menu.style.left = '-102.5%';
+  menuBackground.style.left = '-100%';
+  input.checked = false;
 })
 
