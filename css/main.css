@@ -20,7 +20,7 @@ body, html { width: 100%; height: 100%; font-family: Commissioner; font-size: 16
 
 .menu-container .button-menu label[for="bt-menu"] { padding: 5px; cursor: pointer; text-align: center; font-size: 30px; }
 
-@media (max-width: 920px) { .menu-container .menu { width: 75%; display: block; background: white; position: absolute; top: 155px; left: -102.5%; text-align: center; border-radius: 15px; -webkit-transition: all .5s; transition: all .5s; }
+@media (max-width: 920px) { .menu-container .menu { width: 75%; display: block; background: white; position: absolute; top: 100px; left: -102.5%; text-align: center; border-radius: 15px; -webkit-transition: all .5s; transition: all .5s; }
   .menu-container .menu .menu-itens { height: 60px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; border-bottom: 1px solid black; }
   .menu-container .menu .menu-itens:hover { cursor: pointer; background-color: #eee; }
   .menu-container .menu .menu-itens:hover:first-child { background-color: #eee; border-top-left-radius: 15px; border-top-right-radius: 15px; }
