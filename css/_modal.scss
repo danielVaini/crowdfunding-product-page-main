@@ -21,7 +21,66 @@
 
     border-radius: 25px;
 
-    padding: 15px;
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .top-pleadge {
+      
+      .title-pleadge {
+        
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 24px;
+
+        button {
+          border: none;
+          outline: none;
+          background: none;
+
+          position: relative;
+          top: -20px;
+          right: -15px;
+        }
+      }
+      p {
+        color: $darkGrayNeutral;
+        margin-bottom: 24px;
+      }
+
+    }
+
+    .pledge-noreward {
+      width: 100%;
+      height: 136px;
+
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+
+      border: 1px solid rgba($color: #000000, $alpha: 0.1);
+      border-radius: 16px;
+
+      padding: 24px;
+
+      input {
+        margin-right: 24px;
+      }
+
+      p {
+        font-size: 16;
+        font-weight: bold;
+        margin-bottom: 16px;
+      }
+
+      span {
+        color: $darkGrayNeutral;
+      }
+    }
+    
   }
 
 }
