@@ -1,0 +1,18 @@
+@import './colors';
+
+input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
+
+
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+
+  border: 1px solid $darkGrayNeutral;
+
+  position: absolute;
+
+}
