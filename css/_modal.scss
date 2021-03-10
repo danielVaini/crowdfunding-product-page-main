@@ -58,7 +58,6 @@
       height: 136px;
 
       display: flex;
-      justify-content: center;
       align-items: baseline;
 
       border: 1px solid rgba($color: #000000, $alpha: 0.1);
@@ -66,21 +65,24 @@
 
       padding: 24px;
 
-      input {
-        margin-right: 24px;
-      }
-
+    .about-donation {
+      margin-left: 40px;
+      
       p {
         font-size: 16;
         font-weight: bold;
         margin-bottom: 16px;
+    
       }
-
+      
       span {
         color: $darkGrayNeutral;
+        
+        
       }
+    }
     }
     
   }
-
+  
 }
