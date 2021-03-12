@@ -128,8 +128,48 @@
          
         }
 
+      }
+
+      hr {
+        margin-left: -25px;
+      
+      }
+
+      .entrie-donation {
+        width: 100%;
         
-        
+        margin-top: 40px;
+
+        display: flex;
+        justify-content: space-between;
+
+        .btn-donation {
+          input[type='text'] {
+            width: 100px;
+            height: 50px;
+
+            border-style: none;
+            
+            outline: none;
+            border-radius: 30px;
+            
+          }
+          button {
+            width: 100px;
+            height: 50px;
+
+            border-style: none;
+            
+            outline: none;
+            border-radius: 30px;
+
+            background-color: $darkCyanPrimary;
+            color: white;
+            font-weight: 700;
+
+          }
+        }
+
       }
      
     }
