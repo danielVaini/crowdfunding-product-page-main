@@ -76,5 +76,63 @@
         }
       }
     }
+
+    .bamboo-stang-card {
+      width: 100%;
+      height: 136px;
+
+      padding: 24px;
+
+      display: flex;
+      align-items: baseline;
+      flex-direction: column;
+
+      border: 1px solid rgba($color: #000000, $alpha: 0.1);
+      border-radius: 16px;
+
+      margin-top: 24px;
+
+      .about-donation-bamboo {
+        margin-left: 40px;
+
+        div {
+          display: flex;
+          justify-content: space-between;
+          :first-child{
+            font-weight: bold;
+            span {
+              font-weight: bold;
+
+              color: $cyanPrimary;
+              margin-left: 8px;
+            }
+          }
+
+          :last-child {
+            font-weight: bold;
+            span{
+              font-weight: 300;
+              font-size: 14px;
+
+              color: $darkGrayNeutral;  
+
+              margin-left: 8px;
+            }
+          }
+        }
+
+        .about-text {
+          margin: 24px 0;
+          color: $darkGrayNeutral;
+
+         
+        }
+
+        
+        
+      }
+     
+    }
+
   }
 }
