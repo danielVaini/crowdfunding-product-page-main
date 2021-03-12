@@ -2,8 +2,32 @@
 
 input[type='radio'] {
   appearance: none;
+  position: absolute;
+  outline: none;
 }
 input[type='radio']::before {
+  position: absolute;
   content: "";
+  width: 20px;
+  height: 20px;
+  
+  border: 1px solid $darkGrayNeutralButton;
+  border-radius: 50%;
+  
+}
 
+input[type='radio']:checked::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 1px solid $darkGrayNeutralButton;
+  border-radius: 50%;
+
+  background-color: $cyanPrimary;
+
+  left: 5px;
+  top: 5px;
+
+  
 }
