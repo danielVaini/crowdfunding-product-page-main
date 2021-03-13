@@ -152,6 +152,17 @@
             
             outline: none;
             border-radius: 30px;
+
+            border: 1px solid $darkGrayNeutral;
+            
+            padding: 16px;
+            
+            transition: all 0.5s;
+            
+            &:focus {
+              border: 1.8px solid $darkCyanPrimary;
+              
+            }
             
           }
           button {
