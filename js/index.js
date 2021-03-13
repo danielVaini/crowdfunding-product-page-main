@@ -18,10 +18,29 @@ button.addEventListener('click', () => {
   input.checked = false;
 })
 
-const inputRadio = document.querySelectorAll('#option')
 
-inputRadio.forEach(item => {
+// modal
+const inputRadio = document.querySelectorAll('#option')
+const divNonation = document.querySelectorAll('.entrie-donation')
+const divBamboo = document.querySelector('.bamboo-stang-card')
+const hr = document.querySelectorAll('hr')
+
+inputRadio.forEach((item) => {
   item.addEventListener('click',() => {
-    console.log(inputRadio)})
+    if(inputRadio[1].checked){
+      console.log(inputRadio)
+      divNonation[0].style.display = 'flex';
+      divNonation[0].style.top = '0px'; 
+      divBamboo.style.height = 250+'px';
+      hr.style.display = 'block'
+    }else {
+      divNonation[0].style.display = 'none';
+      divBamboo.style.height = 136+'px';
+      hr.style.display = 'none'
+
+    }
+
+
+  })
 
 })
