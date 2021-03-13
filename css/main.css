@@ -164,7 +164,9 @@ body, html { width: 100%; height: 100%; font-family: Commissioner; font-size: 16
 
 .donation-section .background-modal .bamboo-stang-card .entrie-donation { width: 100%; margin-top: 40px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-.donation-section .background-modal .bamboo-stang-card .entrie-donation .btn-donation input[type='text'] { width: 100px; height: 50px; border-style: none; outline: none; border-radius: 30px; }
+.donation-section .background-modal .bamboo-stang-card .entrie-donation .btn-donation input[type='text'] { width: 100px; height: 50px; border-style: none; outline: none; border-radius: 30px; border: 1px solid #7a7a7a; padding: 16px; -webkit-transition: all 0.5s; transition: all 0.5s; }
+
+.donation-section .background-modal .bamboo-stang-card .entrie-donation .btn-donation input[type='text']:focus { border: 1.8px solid #147b74; }
 
 .donation-section .background-modal .bamboo-stang-card .entrie-donation .btn-donation button { width: 100px; height: 50px; border-style: none; outline: none; border-radius: 30px; background-color: #147b74; color: white; font-weight: 700; }
 
