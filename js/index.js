@@ -18,8 +18,10 @@ button.addEventListener('click', () => {
   input.checked = false;
 })
 
-const inputRadio = document.querySelectorAll('[name="option"]')
+const inputRadio = document.querySelectorAll('#option')
 
-inputRadio.addEventListener('click',() => {
-  console.log(inputRadio)
-} )
+inputRadio.forEach(item => {
+  item.addEventListener('click',() => {
+    console.log(inputRadio)})
+
+})
