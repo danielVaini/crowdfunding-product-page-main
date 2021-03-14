@@ -1,6 +1,10 @@
 .donation-section {
   position: absolute;
 
+  left: -100%;
+
+  
+
   width: 100%;
   height: 300vh;
 
@@ -11,10 +15,11 @@
   align-items: center;
   justify-content: center;
 
+  transition: all .5s;
 
   .background-modal {
     width: 700px;
-    height: 1000px;
+    height: 900px;
 
     position: absolute;
     top: 180px;
@@ -44,6 +49,11 @@
           position: relative;
           top: -20px;
           right: -15px;
+
+          width: 20px;
+          height: 20px;
+
+          cursor: pointer;
         }
       }
       p {
@@ -94,7 +104,12 @@
 
       margin-top: 24px;
 
-      .about-donation-bamboo {
+      .disable {
+        opacity: .5;
+        
+      }
+
+      .about-donation-card {
         margin-left: 40px;
 
         div {
