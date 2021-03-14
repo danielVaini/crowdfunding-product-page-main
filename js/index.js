@@ -36,7 +36,7 @@ inputRadio.forEach((item) => {
     }else if (!inputRadio[1].checked){
       divNonation[0].style.display = 'none';
       cards[0].style.height = 136+'px';
-     
+      
 
     }
     if(inputRadio[2].checked){
@@ -55,4 +55,25 @@ inputRadio.forEach((item) => {
 
   })
 
+})
+
+
+// Show modal
+
+const buttonModal = document.querySelectorAll('.modal-show')
+const modalShow = document.querySelector('.donation-section')
+
+buttonModal.forEach(item => {
+  item.addEventListener('click', () => {
+    modalShow.style.left = 0+'px'
+  })
+})
+
+// Close modal
+
+const buttonClose = document.querySelector('.close-modal')
+
+buttonClose.addEventListener('click', () => {
+  modalShow.style.left = '-100%'
+  console.log('Clickde')
 })
