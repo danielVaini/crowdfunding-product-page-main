@@ -126,13 +126,13 @@ body, html { width: 100%; height: 100%; font-family: Commissioner; font-size: 16
 
 .about .disable .bottom-card-about button:hover { cursor: auto; background-color: #7a7a7a; }
 
-.donation-section { position: absolute; width: 100%; height: 300vh; background-color: rgba(0, 0, 0, 0.5); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.donation-section { position: absolute; left: -100%; width: 100%; height: 300vh; background-color: rgba(0, 0, 0, 0.5); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-transition: all .5s; transition: all .5s; }
 
-.donation-section .background-modal { width: 700px; height: 1000px; position: absolute; top: 180px; background-color: white; border-radius: 25px; padding: 50px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.donation-section .background-modal { width: 700px; height: 900px; position: absolute; top: 180px; background-color: white; border-radius: 25px; padding: 50px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .donation-section .background-modal .top-pleadge .title-pleadge { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-bottom: 24px; }
 
-.donation-section .background-modal .top-pleadge .title-pleadge button { border: none; outline: none; background: none; position: relative; top: -20px; right: -15px; }
+.donation-section .background-modal .top-pleadge .title-pleadge button { border: none; outline: none; background: none; position: relative; top: -20px; right: -15px; width: 20px; height: 20px; cursor: pointer; }
 
 .donation-section .background-modal .top-pleadge p { color: #7a7a7a; margin-bottom: 24px; }
 
@@ -146,19 +146,21 @@ body, html { width: 100%; height: 100%; font-family: Commissioner; font-size: 16
 
 .donation-section .background-modal .card { width: 100%; height: 136px; padding: 24px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 16px; margin-top: 24px; }
 
-.donation-section .background-modal .card .about-donation-bamboo { margin-left: 40px; }
+.donation-section .background-modal .card .disable { opacity: .5; }
 
-.donation-section .background-modal .card .about-donation-bamboo div { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.donation-section .background-modal .card .about-donation-card { margin-left: 40px; }
 
-.donation-section .background-modal .card .about-donation-bamboo div :first-child { font-weight: bold; }
+.donation-section .background-modal .card .about-donation-card div { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-.donation-section .background-modal .card .about-donation-bamboo div :first-child span { font-weight: bold; color: #3cb4ac; margin-left: 8px; }
+.donation-section .background-modal .card .about-donation-card div :first-child { font-weight: bold; }
 
-.donation-section .background-modal .card .about-donation-bamboo div :last-child { font-weight: bold; }
+.donation-section .background-modal .card .about-donation-card div :first-child span { font-weight: bold; color: #3cb4ac; margin-left: 8px; }
 
-.donation-section .background-modal .card .about-donation-bamboo div :last-child span { font-weight: 300; font-size: 14px; color: #7a7a7a; margin-left: 8px; }
+.donation-section .background-modal .card .about-donation-card div :last-child { font-weight: bold; }
 
-.donation-section .background-modal .card .about-donation-bamboo .about-text { margin: 24px 0; color: #7a7a7a; }
+.donation-section .background-modal .card .about-donation-card div :last-child span { font-weight: 300; font-size: 14px; color: #7a7a7a; margin-left: 8px; }
+
+.donation-section .background-modal .card .about-donation-card .about-text { margin: 24px 0; color: #7a7a7a; }
 
 .donation-section .background-modal .card hr { margin-left: -25px; display: none; }
 
