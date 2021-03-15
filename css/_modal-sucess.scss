@@ -1,3 +1,5 @@
+@import './colors';
+
 .background-sucess {
   position: absolute;
 
@@ -11,5 +13,48 @@
 
   background-color: rgba($color: #000000, $alpha: 0.4);
 
-  
+  left: -100%;
+
+  .sucess {
+    width: 400px;
+    height: 300px;
+
+    padding: 10px 0;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    text-align: justify;
+
+    border-radius: 16px;
+
+    p {
+      width: 330px;
+      font-size: 14px;
+      
+      color: $darkGrayNeutral;
+    }
+
+    button {
+      width: 100px;
+      height: 40px;
+
+      border-radius: 16px;
+
+      outline: none;
+      border: none;
+
+      background-color: $darkCyanPrimary;
+      color: white;
+      font-weight: 700;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
 }
