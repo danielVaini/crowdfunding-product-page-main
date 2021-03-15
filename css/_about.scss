@@ -109,10 +109,16 @@
           border-radius: 16px;
           background-color: $cyanPrimary;
 
-          color: white;
           font-weight: 700; 
-
+          
           outline: none;
+          
+          a {
+            color: white;
+            padding: 14px 19px;
+            text-decoration: none;
+
+          }
 
         &:hover {
           background-color: $darkCyanPrimary;
@@ -142,6 +148,7 @@
 
         button {
           background-color: $darkGrayNeutral;
+
 
           &:hover {
             cursor: auto;
