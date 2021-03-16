@@ -1,4 +1,4 @@
-@import './colors';
+@import "./colors";
 
 .about {
   width: 100%;
@@ -18,143 +18,134 @@
 
   margin-bottom: 20px;
 
-
-
   .margin {
     margin-top: 40px;
   }
 
+  h2 {
+    width: 100%;
+    margin: 32px 0;
+  }
 
-    h2 {
+  p {
+    margin: 16px 0;
+
+    text-align: justify;
+
+    color: $darkGrayNeutral;
+
+    margin-bottom: 32px;
+
+    line-height: 25px;
+  }
+
+  .card-stand {
+    width: 98%;
+
+    border: 1px solid $darkGrayNeutralButton;
+    border-radius: 16px;
+
+    padding: 16px;
+
+    .top-card-about {
       width: 100%;
-      margin: 32px 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        color: black;
+        font-weight: 700;
+        font-size: 24px;
+      }
+
+      span {
+        font-weight: 500;
+        color: $cyanPrimary;
+      }
     }
 
     p {
-      margin: 16px 0;
-
-      text-align: justify;
-
       color: $darkGrayNeutral;
-
-      margin-bottom: 32px;
-
-      line-height: 25px;
+      font-size: 16px;
     }
 
-    .card-stand {
-      width: 98%;
-      
-      border: 1px solid $darkGrayNeutralButton;
-      border-radius: 16px;
+    .bottom-card-about {
+      width: 100%;
 
-      padding: 16px;
+      display: flex;
+      align-items: center;
 
-      .top-card-about {
-        width: 100%;
-
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        p {
-          color: black;
-          font-weight: 700;
-          font-size: 24px;
-        }
-
-        span {
-          font-weight: 500;
-          color: $cyanPrimary;
-        }
-      }
+      justify-content: space-between;
 
       p {
-        color: $darkGrayNeutral;
-        font-size: 16px;
-      }
-
-      .bottom-card-about {
-        width: 100%;
-
         display: flex;
         align-items: center;
 
-        justify-content: space-between;
+        font-size: 24px;
+        font-weight: 700;
+        color: black;
 
-        p {
-          display: flex;
-          align-items: center;
+        span {
+          font-size: 12px;
+          color: $darkGrayNeutral;
+          font-weight: 400;
 
-          
-          font-size: 24px;
-          font-weight: 700;
-          color: black;
-          
-          span {
-            font-size: 12px;
-            color: $darkGrayNeutral;
-            font-weight: 400;
-
-            margin-left: 10px;
-            
-          }
+          margin-left: 10px;
         }
+      }
 
-        button {
-          width: 150px;
-          height: 40px;
+      button {
+        width: 150px;
+        height: 40px;
 
-          border: none;
-          border-radius: 16px;
-          background-color: $cyanPrimary;
+        border: none;
+        border-radius: 16px;
+        background-color: $cyanPrimary;
 
-          font-weight: 700; 
-          
-          outline: none;
-          
-          a {
-            color: white;
-            padding: 14px 19px;
-            text-decoration: none;
+        font-weight: 700;
 
-          }
+        outline: none;
+
+        a {
+          color: white;
+          padding: 14px 19px;
+          text-decoration: none;
+        }
 
         &:hover {
           background-color: $darkCyanPrimary;
           cursor: pointer;
-          }
         }
+      }
+    }
+  }
 
-        
+  .disable {
+    .top-card-about {
+      p {
+        color: $darkGrayNeutral;
+      }
+
+      span {
+        opacity: 0.5;
       }
     }
 
-    .disable {
-      .top-card-about {
-        p {
-          color: $darkGrayNeutral;
-        }
-  
-        span {
-          opacity: .5;
-        }
+    .bottom-card-about {
+      p {
+        color: $darkGrayNeutral;
       }
 
-      .bottom-card-about {
-        p {
-          color:  $darkGrayNeutral;
-        }
+      button {
+        background-color: $darkGrayNeutral;
 
-        button {
+        &:hover {
+          cursor: auto;
           background-color: $darkGrayNeutral;
-
-
-          &:hover {
-            cursor: auto;
-            background-color: $darkGrayNeutral;
-          }
         }
       }
     }
+  }
 }
