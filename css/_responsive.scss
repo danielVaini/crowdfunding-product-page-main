@@ -1,0 +1,73 @@
+@import './colors';
+
+@media (max-width: 740px) {
+
+  .section-container {
+    width: 350px;
+
+    .title {
+      text-align: center;
+     h1 {
+       width: 250px;
+     }
+
+     .btn-title {
+       .bookmark{
+         button {
+           display: none;
+         }
+       }
+     }
+    }
+
+    .progress-bar {
+      align-items: center;
+      justify-content: center;
+      height: 400px;
+      .backed-container {
+        height: 80%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-bottom: 16px;
+        .backed {
+          text-align: center;
+          width: 150px;
+          margin: 0;
+        }
+
+        .total-backers {
+          width: 150px;
+          height: 150px;
+
+          justify-content: center;
+
+          border: none;
+
+          border-top: 1px solid $darkGrayNeutral;
+          border-bottom: 1px solid $darkGrayNeutral;
+        }
+
+        .days-left {
+          width: 150px;
+          text-align: center;
+        }
+      }
+    }
+
+    .about {
+      height: auto;
+
+      .card-stand {
+       .top-card-about {
+         flex-direction: column;
+       }
+
+       .bottom-card-about {
+         flex-direction: column;
+       }
+      }
+    }
+  }
+}
