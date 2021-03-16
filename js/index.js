@@ -83,12 +83,12 @@ const sucessModal = document.querySelector('.background-sucess')
 submitButton.forEach(item => {
   item.addEventListener('click', () => {
     sucessModal.style.left = '0px'
-    modalShow.style.left = '-100%'
+    modalShow.style.left = '-200%'
   })
 })
 
 const gotIt = document.querySelector('.got-it');
 
 gotIt.addEventListener('click', () => {
-  sucessModal.style.left = '-100%';
+  sucessModal.style.left = '-200%';
 })
