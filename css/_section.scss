@@ -66,8 +66,37 @@
       }
 
       .bookmark {
+
+        .btn-response {
+          display: flex;
+          align-items: center;
+
+          outline: none;
+          appearance: none;
+
+          width: 56px;
+          height: 50px;
+          border-radius: 50%;
+
+          display: none;
+
+          &:hover {
+
+            color: $cyanPrimary;
+            
+            circle {
+              fill: $cyanPrimary;  
+  
+            }
+  
+            path {
+              fill: white;
+            }
+          }
+          
+        }
         
-        button {
+        .btn-book {
           display: flex;
           align-items:center ;
          
