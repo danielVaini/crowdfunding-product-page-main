@@ -54,13 +54,21 @@ body, html { width: 100%; height: 100%; font-family: Commissioner; font-size: 16
 
 .section-container .title .btn-title button:hover { background-color: #147b74; cursor: pointer; }
 
-.section-container .title .btn-title .bookmark button { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: #e3e3e3; color: #7a7a7a; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding-right: 24px; }
+.section-container .title .btn-title .bookmark .btn-response { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; outline: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; width: 56px; height: 50px; border-radius: 50%; display: none; }
 
-.section-container .title .btn-title .bookmark button:hover { color: #3cb4ac; }
+.section-container .title .btn-title .bookmark .btn-response:hover { color: #3cb4ac; }
 
-.section-container .title .btn-title .bookmark button:hover circle { fill: #3cb4ac; }
+.section-container .title .btn-title .bookmark .btn-response:hover circle { fill: #3cb4ac; }
 
-.section-container .title .btn-title .bookmark button:hover path { fill: white; }
+.section-container .title .btn-title .bookmark .btn-response:hover path { fill: white; }
+
+.section-container .title .btn-title .bookmark .btn-book { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: #e3e3e3; color: #7a7a7a; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding-right: 24px; }
+
+.section-container .title .btn-title .bookmark .btn-book:hover { color: #3cb4ac; }
+
+.section-container .title .btn-title .bookmark .btn-book:hover circle { fill: #3cb4ac; }
+
+.section-container .title .btn-title .bookmark .btn-book:hover path { fill: white; }
 
 .progress-bar { width: 100%; height: 200px; background-color: white; margin-top: 40px; border-radius: 15px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
@@ -120,7 +128,7 @@ body, html { width: 100%; height: 100%; font-family: Commissioner; font-size: 16
 
 .about .disable .top-card-about p { color: #7a7a7a; }
 
-.about .disable .top-card-about span { opacity: .5; }
+.about .disable .top-card-about span { opacity: 0.5; }
 
 .about .disable .bottom-card-about p { color: #7a7a7a; }
 
@@ -128,18 +136,22 @@ body, html { width: 100%; height: 100%; font-family: Commissioner; font-size: 16
 
 .about .disable .bottom-card-about button:hover { cursor: auto; background-color: #7a7a7a; }
 
-@media (max-width: 740px) { .section-container { width: 350px; }
-  .section-container .title { text-align: center; }
-  .section-container .title h1 { width: 250px; }
-  .section-container .title .btn-title .bookmark button { display: none; }
-  .section-container .progress-bar { -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 400px; }
-  .section-container .progress-bar .backed-container { height: 80%; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-bottom: 16px; }
-  .section-container .progress-bar .backed-container .backed { text-align: center; width: 150px; margin: 0; }
-  .section-container .progress-bar .backed-container .total-backers { width: 150px; height: 150px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border: none; border-top: 1px solid #7a7a7a; border-bottom: 1px solid #7a7a7a; }
-  .section-container .progress-bar .backed-container .days-left { width: 150px; text-align: center; }
-  .section-container .about { height: auto; }
-  .section-container .about .card-stand .top-card-about { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
-  .section-container .about .card-stand .bottom-card-about { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
+@media (max-width: 740px) { .container .layout .section-container { width: 350px; }
+  .container .layout .section-container .title { text-align: center; }
+  .container .layout .section-container .title h1 { width: 250px; }
+  .container .layout .section-container .title .btn-title .bookmark .btn-response { display: -webkit-box; display: -ms-flexbox; display: flex; }
+  .container .layout .section-container .title .btn-title .bookmark .btn-book { display: none; }
+  .container .layout .section-container .progress-bar { -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 400px; }
+  .container .layout .section-container .progress-bar .backed-container { height: 80%; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-bottom: 16px; }
+  .container .layout .section-container .progress-bar .backed-container .backed { text-align: center; width: 150px; margin: 0; }
+  .container .layout .section-container .progress-bar .backed-container .total-backers { width: 150px; height: 150px; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border: none; border-top: 1px solid #7a7a7a; border-bottom: 1px solid #7a7a7a; }
+  .container .layout .section-container .progress-bar .backed-container .days-left { width: 150px; text-align: center; }
+  .container .layout .section-container .about { height: auto; }
+  .container .layout .section-container .about .card-stand .top-card-about { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+  .container .layout .section-container .about .card-stand .bottom-card-about { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+  .container .layout .donation-section .background-modal { width: 350px; height: auto; }
+  .container .layout .donation-section .background-modal .pledge-noreward { height: 300px; }
+  .container .layout .donation-section .background-modal .card { height: 300px; } }
 
 .donation-section { position: absolute; left: -200%; width: 100%; height: 300vh; background-color: rgba(0, 0, 0, 0.5); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-transition: all .5s; transition: all .5s; }
 
