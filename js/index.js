@@ -3,12 +3,12 @@ const menu = document.querySelector('.menu')
 const menuBackground = document.querySelector('.background-menu-mobile');
 const button = document.querySelector('.close-menu')
 
-input.addEventListener('click', function(){
-  if(input.checked){
+input.addEventListener('click', function () {
+  if (input.checked) {
     menu.style.left = '12.5%';
     menuBackground.style.left = '0px';
-    
-    
+
+
   }
 })
 
@@ -25,38 +25,48 @@ const divNonation = document.querySelectorAll('.entrie-donation')
 const cards = document.querySelectorAll('.card')
 const hr = document.querySelectorAll('hr')
 
+
+
 inputRadio.forEach((item) => {
-  item.addEventListener('click',() => {
-    if(inputRadio[1].checked){
 
-      divNonation[0].style.display = 'flex';
-      divNonation[0].style.top = '0px'; 
-      cards[0].style.height = 250+'px';
-     
-    }else if (!inputRadio[1].checked){
-      divNonation[0].style.display = 'none';
-      cards[0].style.height = 136+'px';
-      
 
-    }
-    if(inputRadio[2].checked){
-     console.log('Checked')
-     divNonation[1].style.display = 'flex';
-     divNonation[1].style.top = '0px'; 
-     cards[1].style.height = 250+'px';
+  item.addEventListener('click', () => {
+
     
-    }else if (!inputRadio[2].checked){
-      console.log('No Checked')
-      divNonation[1].style.display = 'none';
-      cards[1].style.height = 136+'px';
-     
-    }
 
-
-  })
-
+      if (inputRadio[1].checked) {
+        
+        divNonation[0].style.display = 'flex';
+        divNonation[0].style.top = '0px';
+        cards[0].style.height = cards[0].clientHeight * 1.5 + 'px';
+        
+      } else if (!inputRadio[1].checked) {
+        divNonation[0].style.display = 'none';
+        cards[0].style.height = cards[0].clientHeight / 1.5 + 'px';
+      }
+          
+      
+      if (inputRadio[2].checked) {
+        console.log('Checked')
+        divNonation[1].style.display = 'flex';
+        divNonation[1].style.top = '0px';
+        cards[1].style.height = cards[1].clientHeight * 1.5 + 'px';
+        
+      } else if (!inputRadio[2].checked) {
+        console.log('No Checked')
+        divNonation[1].style.display = 'none';
+        cards[1].style.height = cards[1].clientHeight / 1.5 + 'px';
+        
+      }
+      
+    })
+      
+      
+      
 })
-
+    
+  
+  
 
 // Show modal
 
@@ -65,7 +75,7 @@ const modalShow = document.querySelector('.donation-section')
 
 buttonModal.forEach(item => {
   item.addEventListener('click', () => {
-    modalShow.style.left = 0+'px'
+    modalShow.style.left = 0 + 'px'
   })
 })
 
