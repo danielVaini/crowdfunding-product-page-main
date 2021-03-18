@@ -78,6 +78,7 @@
       }
       
       .donation-section{
+        height: 510vh;
         .background-modal {
           width: 350px;
           height: auto;
@@ -110,6 +111,9 @@
            }
          }
         }
+      }
+      .background-sucess {
+        position: fixed;
       }
     }
   }
