@@ -207,6 +207,8 @@ body, html { width: 100%; height: 100%; font-family: Commissioner; font-size: 16
 
 .donation-section .background-modal .card .entrie-donation .btn-donation button:hover { cursor: pointer; }
 
+.donation-section .background-modal .card .entrie-donation .btn-donation button a { text-decoration: none; color: white; }
+
 input[type='radio'] { -webkit-appearance: none; -moz-appearance: none; appearance: none; position: absolute; outline: none; }
 
 input[type='radio']::before { position: absolute; content: ""; width: 20px; height: 20px; border: 1px solid #e3e3e3; border-radius: 50%; }
